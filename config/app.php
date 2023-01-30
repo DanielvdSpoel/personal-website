@@ -82,6 +82,9 @@ return [
 
     'locale' => 'en',
 
+    'dutch_domains' => env('DUTCH_LANGUAGE_DOMAINS', ''),
+    'english_domains' => env('ENGLISH_LANGUAGE_DOMAINS', ''),
+
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
