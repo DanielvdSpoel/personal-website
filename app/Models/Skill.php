@@ -8,21 +8,19 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Employer extends Model
+class Skill extends Model
 {
     use HasFactory, HasTranslations;
 
     protected $fillable = [
         'name',
-        'start_date',
-        'end_date',
-        'position',
         'description',
         'media_id',
+        'url',
     ];
 
     public array $translatable = [
-        'position',
+        'name',
         'description',
     ];
 
@@ -31,3 +29,4 @@ class Employer extends Model
         return $this->belongsTo(Media::class);
     }
 }
+

@@ -6,6 +6,7 @@ use App\Filament\Resources\EmployerResource\Pages;
 use App\Filament\Resources\EmployerResource\RelationManagers;
 use App\Models\Employer;
 use Awcodes\Curator\Components\Forms\CuratorPicker;
+use Awcodes\Curator\Components\Tables\CuratorColumn;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
@@ -54,6 +55,7 @@ class EmployerResource extends Resource
     {
         return $table
             ->columns([
+                CuratorColumn::make('media')->label('Logo'),
                 Tables\Columns\TextColumn::make('name')
                     ->searchable()->sortable(),
                 Tables\Columns\TextColumn::make('start_date')

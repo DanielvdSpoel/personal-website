@@ -1,17 +1,15 @@
 <?php
 
-namespace App\Filament\Resources\EmployerResource\Pages;
+namespace App\Filament\Resources\SkillResource\Pages;
 
-use App\Filament\Resources\EmployerResource;
+use App\Filament\Resources\SkillResource;
 use Filament\Pages\Actions;
-use Filament\Resources\Concerns\Translatable;
 use Filament\Resources\Pages\CreateRecord;
 
-class CreateEmployer extends CreateRecord
+class CreateSkill extends CreateRecord
 {
     use CreateRecord\Concerns\Translatable;
-
-    protected static string $resource = EmployerResource::class;
+    protected static string $resource = SkillResource::class;
 
     protected function getActions(): array
     {
@@ -19,4 +17,5 @@ class CreateEmployer extends CreateRecord
             Actions\LocaleSwitcher::make(),
         ];
     }
+
 }

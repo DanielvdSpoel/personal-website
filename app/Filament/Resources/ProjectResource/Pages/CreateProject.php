@@ -19,7 +19,6 @@ class CreateProject extends CreateRecord
     {
         return [
             Actions\LocaleSwitcher::make(),
-            // ...
         ];
     }
 

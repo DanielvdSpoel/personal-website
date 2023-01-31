@@ -26,6 +26,7 @@
         "@headlessui/vue": "^1.7.8",
         "@heroicons/vue": "^2.0.14",
         "@inertiajs/vue3": "^1.0.0",
+        "@vue/server-renderer": "^3.2.45",
         "luxon": "^3.2.1",
         "vue": "^3.2.29",
         "vue-i18n": "^9.1.9"

@@ -22,7 +22,7 @@ class Project extends Model
         'content'
     ];
 
-    public $translatable = [
+    public array $translatable = [
         'name',
         'slug',
         'description',
