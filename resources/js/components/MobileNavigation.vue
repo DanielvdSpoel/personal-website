@@ -44,18 +44,18 @@
                     <nav class="mt-6">
                         <ul class="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                             <li>
-                                <Link class="block py-2" :href="route('about')">
+                                <Link class="block py-2" :href="route('about', {language: route().params.language})">
                                     {{ $t('pages.navigation.about') }}
 
                                 </Link>
                             </li>
                             <li>
-                                <Link class="block py-2" :href="route('projects')">
+                                <Link class="block py-2" :href="route('projects', {language: route().params.language})">
                                     {{ $t('pages.navigation.projects') }}
                                 </Link>
                             </li>
                             <li>
-                                <Link class="block py-2" :href="route('uses')">
+                                <Link class="block py-2" :href="route('uses', {language: route().params.language})">
                                     {{ $t('pages.navigation.uses') }}
                                 </Link>
                             </li>

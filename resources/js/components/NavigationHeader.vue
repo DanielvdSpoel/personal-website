@@ -12,7 +12,7 @@
                                 </div>
                                 <Link v-if="route().current('home')" :href="route('home', {language: route().params.language})" aria-label="Home"
                                       class="block h-16 w-16 origin-left pointer-events-auto">
-                                    <img sizes="4rem" alt="A picture of me" src="img/me.jpg" width="512" height="512"
+                                    <img sizes="4rem" alt="A picture of me" src="/img/me.jpg" width="512" height="512"
                                          class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16"
                                          style="color: transparent;">
                                 </Link>
@@ -31,8 +31,8 @@
                                 <div class="flex flex-1">
                                     <div v-if="!route().current('home')"
                                          class="h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10">
-                                        <Link :href="route('home', route().params.language)" aria-label="Home" class="pointer-events-auto">
-                                            <img alt="A picture of me" src="img/me.jpg"
+                                        <Link :href="route('home', {language: route().params.language})" aria-label="Home" class="pointer-events-auto">
+                                            <img alt="A picture of me" src="/img/me.jpg"
                                                  sizes="2.25rem" width="512" height="512"
                                                  class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-9 w-9">
                                         </Link>

@@ -6,6 +6,14 @@ return [
         'contact' => [
             'title' => "Nog vragen?",
             "subtitle" => "Ik kan me voorstellen dat u nog vragen hebt over mij of mijn werk. Gebruik het contact formulier hieronder om mij een bericht te sturen en ik zal zo snel mogelijk contact met u opnemen!",
+        ],
+        'employers' => [
+            'title' => "Mijn werkervaring",
+            'download_cv' => "Download CV",
+        ],
+        'projects' => [
+            'title' => "Mijn recente projecten",
+            'view_all' => "Bekijk alle projecten",
         ]
     ],
     'navigation' => [

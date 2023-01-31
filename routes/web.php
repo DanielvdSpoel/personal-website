@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProjectController;
+use App\Models\Project;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,13 +16,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::prefix('/{language}')->group(function () {
-    Route::inertia('/', 'Home')->name('home');
+    Route::get('/', HomeController::class)->name('home');
     Route::inertia('/about', 'About')->name('about');
-    Route::inertia('/projects', 'Projects')->name('projects');
     Route::inertia('/uses', 'Uses')->name('uses');
+
+    Route::prefix('/projects')->group(function () {
+        Route::get('/', [ProjectController::class, 'index'])->name('projects');
+        Route::get('/{project}-{slug}', [ProjectController::class, 'show'])->name('projects.show');
+    });
+
     Route::post('/contact', ContactController::class)->name('contact');
 
 });
-
-

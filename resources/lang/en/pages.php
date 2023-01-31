@@ -6,6 +6,14 @@ return [
         'contact' => [
             'title' => "Any questions?",
             'subtitle' => "I tried to make this website as informative as possible, but if you have any questions for me, feel free to use the contact form below and I will get back to you as soon as possible!",
+        ],
+        'employers' => [
+            'title' => "My experience",
+            'download_cv' => "Download CV",
+        ],
+        'projects' => [
+            'title' => "My recent projects",
+            'view_all' => "View all projects",
         ]
     ],
     'navigation' => [
