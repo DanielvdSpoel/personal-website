@@ -11,6 +11,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class EditProject extends EditRecord
 {
+    use EditRecord\Concerns\Translatable;
+
     protected static string $resource = ProjectResource::class;
 
     protected function mutateFormDataBeforeFill(array $data): array
@@ -45,6 +47,7 @@ class EditProject extends EditRecord
     {
         return [
             Actions\DeleteAction::make(),
+            Actions\LocaleSwitcher::make(),
         ];
     }
 }

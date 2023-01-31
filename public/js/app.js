@@ -23753,7 +23753,7 @@ __webpack_require__.r(__webpack_exports__);
       return luxon__WEBPACK_IMPORTED_MODULE_0__.DateTime.fromISO(this.employer.start_date).toFormat('yyyy');
     },
     endDate: function endDate() {
-      return this.employer.end_date == null ? 'Present' : luxon__WEBPACK_IMPORTED_MODULE_0__.DateTime.fromISO(this.employer.end_date).toFormat('yyyy');
+      return this.employer.end_date == null ? this.$t('labels.present') : luxon__WEBPACK_IMPORTED_MODULE_0__.DateTime.fromISO(this.employer.end_date).toFormat('yyyy');
     }
   }
 });
@@ -25293,9 +25293,9 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"
 })], -1 /* HOISTED */);
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+var _hoisted_10 = {
   "class": "relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"
-}, "Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.", -1 /* HOISTED */);
+};
 var _hoisted_11 = {
   "aria-hidden": "true",
   "class": "relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500"
@@ -25325,7 +25325,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.project.name), 1 /* TEXT */), $props.project.client ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('labels.ordered_by')) + " " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.project.client), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])];
     }),
     _: 1 /* STABLE */
-  }, 8 /* PROPS */, ["href"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("time", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.completionDate), 1 /* TEXT */)]), _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('labels.read_more')) + " ", 1 /* TEXT */), _hoisted_12])]);
+  }, 8 /* PROPS */, ["href"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("time", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.completionDate), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.project.description), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('labels.read_more')) + " ", 1 /* TEXT */), _hoisted_12])]);
 }
 
 /***/ }),

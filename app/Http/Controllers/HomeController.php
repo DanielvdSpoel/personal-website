@@ -19,10 +19,10 @@ class HomeController extends Controller
         return inertia('Home', [
             'projects' => Project::orderBy('completed_at')
                 ->limit(3)
-                ->get(),
+                ->get()->toArray(),
             'employers' => Employer::orderBy('end_date')
                 ->with('media')
-                ->get(),
+                ->get()->toArray(),
         ]);
     }
 }

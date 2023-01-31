@@ -7,27 +7,33 @@ use App\Filament\Resources\ProjectResource\RelationManagers;
 use App\Models\Project;
 use Awcodes\Curator\Components\Forms\CuratorPicker;
 use Closure;
-use Filament\Forms;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
+use Filament\Resources\Concerns\Translatable;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\Str;
 
 class ProjectResource extends Resource
 {
+    use Translatable;
+
     protected static ?string $model = Project::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
+
+    public static function getTranslatableLocales(): array
+    {
+        return ['en', 'nl'];
+    }
 
     public static function form(Form $form): Form
     {
@@ -54,7 +60,7 @@ class ProjectResource extends Resource
                 TextInput::make('client')
                     ->maxLength(255),
                 DatePicker::make('completed_at'),
-                RichEditor::make('description')
+                RichEditor::make('content')
                     ->columnSpan(2)
                     ->required(),
                 Repeater::make('media')
@@ -70,9 +76,9 @@ class ProjectResource extends Resource
                             ])
                             ->default('never')
                             ->required(),
-                    ])
-                    ->columns()
-                    ->columnSpan(2)
+                    ]),
+                Textarea::make('description')
+                    ->maxLength(255),
 
             ]);
     }
@@ -84,6 +90,18 @@ class ProjectResource extends Resource
                 Tables\Columns\TextColumn::make('name')->searchable()->sortable(),
                 Tables\Columns\TextColumn::make('slug')->searchable()->sortable(),
                 Tables\Columns\TextColumn::make('client'),
+                Tables\Columns\TextColumn::make('description')
+                    ->limit(50)
+                    ->tooltip(function (TextColumn $column): ?string {
+                        $state = $column->getState();
+
+                        if (strlen($state) <= $column->getLimit()) {
+                            return null;
+                        }
+
+                        // Only render the tooltip if the column contents exceeds the length limit.
+                        return $state;
+                    }),
                 Tables\Columns\TextColumn::make('completed_at')
                     ->date()
             ])

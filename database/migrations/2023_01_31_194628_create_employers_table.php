@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('name');
             $table->date('start_date');
             $table->date('end_date')->nullable();
-            $table->string('position');
-            $table->string('description')->nullable();
+            $table->json('position');
+            $table->json('description')->nullable();
             $table->foreignIdFor(Media::class)->nullable()->constrained()->nullOnDelete();
             $table->timestamps();
         });

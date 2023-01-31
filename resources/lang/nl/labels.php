@@ -7,4 +7,5 @@ return [
     'ordered_by' => 'in opdracht van',
     'read_more' => 'Lees meer',
     'not_completed_yet' => 'Nog niet afgerond',
+    'present' => 'Heden',
 ];

@@ -41,7 +41,7 @@ export default {
             return DateTime.fromISO(this.employer.start_date).toFormat('yyyy');
         },
         endDate() {
-            return this.employer.end_date == null ? 'Present' : DateTime.fromISO(this.employer.end_date).toFormat('yyyy');
+            return this.employer.end_date == null ? this.$t('labels.present') : DateTime.fromISO(this.employer.end_date).toFormat('yyyy');
         }
     }
 }

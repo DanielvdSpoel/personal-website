@@ -23,10 +23,9 @@
             </span>
             {{ completionDate }}
         </time>
-        <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Most
-            companies try to stay ahead of the curve when it comes to visual design, but
-            for Planetaria we needed to create a brand that would still inspire us 100
-            years from now when humanity has spread across our entire solar system.</p>
+        <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+            {{ project.description }}
+        </p>
         <div aria-hidden="true"
              class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
             {{ $t('labels.read_more') }}

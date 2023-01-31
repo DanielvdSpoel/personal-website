@@ -6,11 +6,22 @@ use App\Filament\Resources\ProjectResource;
 use App\Models\Project;
 use Awcodes\Curator\Models\Media;
 use Filament\Pages\Actions;
+use Filament\Resources\Concerns\Translatable;
 use Filament\Resources\Pages\CreateRecord;
 
 class CreateProject extends CreateRecord
 {
+    use CreateRecord\Concerns\Translatable;
+
     protected static string $resource = ProjectResource::class;
+
+    protected function getActions(): array
+    {
+        return [
+            Actions\LocaleSwitcher::make(),
+            // ...
+        ];
+    }
 
     protected function handleRecordCreation(array $data): Project
     {

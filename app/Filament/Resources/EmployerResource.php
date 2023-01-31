@@ -6,23 +6,28 @@ use App\Filament\Resources\EmployerResource\Pages;
 use App\Filament\Resources\EmployerResource\RelationManagers;
 use App\Models\Employer;
 use Awcodes\Curator\Components\Forms\CuratorPicker;
-use Filament\Forms;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
+use Filament\Resources\Concerns\Translatable;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class EmployerResource extends Resource
 {
+    use Translatable;
+
     protected static ?string $model = Employer::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-briefcase';
+
+    public static function getTranslatableLocales(): array
+    {
+        return ['en', 'nl'];
+    }
 
     public static function form(Form $form): Form
     {

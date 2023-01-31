@@ -9,6 +9,7 @@
         "awcodes/filament-curator": "^2.0",
         "doctrine/dbal": "^3.5",
         "filament/filament": "^2.0",
+        "filament/spatie-laravel-translatable-plugin": "^2.16",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "inertiajs/inertia-laravel": "^0.5.4",
