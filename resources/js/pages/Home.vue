@@ -35,41 +35,31 @@
                 <div
                     class="relative aspect-[16/9] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
                     <img alt="" sizes="(min-width: 640px) 18rem, 11rem"
-                         srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&amp;w=16&amp;q=75 16w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&amp;w=32&amp;q=75 32w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&amp;w=48&amp;q=75 48w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&amp;w=64&amp;q=75 64w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&amp;w=96&amp;q=75 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&amp;w=128&amp;q=75 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&amp;w=256&amp;q=75 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&amp;w=384&amp;q=75 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&amp;w=3840&amp;q=75 3840w"
-                         src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-1.c5d2141c.jpg&amp;w=3840&amp;q=75"
-                         width="3744" height="5616" decoding="async" data-nimg="1"
+                         src="img/kwekerijvh-home.jpg"
                          class="absolute inset-0 h-full w-full object-cover" loading="lazy"
                          style="color:transparent"></div>
                 <div
                     class="relative aspect-[16/9] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2">
                     <img alt="" sizes="(min-width: 640px) 18rem, 11rem"
-                         srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-2.3c6c01cf.jpg&amp;w=16&amp;q=75 16w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-2.3c6c01cf.jpg&amp;w=32&amp;q=75 32w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-2.3c6c01cf.jpg&amp;w=48&amp;q=75 48w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-2.3c6c01cf.jpg&amp;w=64&amp;q=75 64w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-2.3c6c01cf.jpg&amp;w=96&amp;q=75 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-2.3c6c01cf.jpg&amp;w=128&amp;q=75 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-2.3c6c01cf.jpg&amp;w=256&amp;q=75 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-2.3c6c01cf.jpg&amp;w=384&amp;q=75 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-2.3c6c01cf.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-2.3c6c01cf.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-2.3c6c01cf.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-2.3c6c01cf.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-2.3c6c01cf.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-2.3c6c01cf.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-2.3c6c01cf.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-2.3c6c01cf.jpg&amp;w=3840&amp;q=75 3840w"
-                         src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-2.3c6c01cf.jpg&amp;w=3840&amp;q=75"
-                         width="3936" height="2624" decoding="async" data-nimg="1"
+                         src="img/kwekerijvh-home.jpg"
                          class="absolute inset-0 h-full w-full object-cover" loading="lazy"
                          style="color:transparent"></div>
                 <div
                     class="relative aspect-[16/9] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
                     <img alt="" sizes="(min-width: 640px) 18rem, 11rem"
-                         srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-3.454151b1.jpg&amp;w=16&amp;q=75 16w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-3.454151b1.jpg&amp;w=32&amp;q=75 32w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-3.454151b1.jpg&amp;w=48&amp;q=75 48w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-3.454151b1.jpg&amp;w=64&amp;q=75 64w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-3.454151b1.jpg&amp;w=96&amp;q=75 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-3.454151b1.jpg&amp;w=128&amp;q=75 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-3.454151b1.jpg&amp;w=256&amp;q=75 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-3.454151b1.jpg&amp;w=384&amp;q=75 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-3.454151b1.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-3.454151b1.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-3.454151b1.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-3.454151b1.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-3.454151b1.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-3.454151b1.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-3.454151b1.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-3.454151b1.jpg&amp;w=3840&amp;q=75 3840w"
-                         src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-3.454151b1.jpg&amp;w=3840&amp;q=75"
-                         width="5760" height="3840" decoding="async" data-nimg="1"
+                         src="img/kwekerijvh-home.jpg"
                          class="absolute inset-0 h-full w-full object-cover" loading="lazy"
                          style="color:transparent"></div>
                 <div
                     class="relative aspect-[16/9] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
                     <img alt="" sizes="(min-width: 640px) 18rem, 11rem"
-                         srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-4.5c6d0ed6.jpg&amp;w=16&amp;q=75 16w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-4.5c6d0ed6.jpg&amp;w=32&amp;q=75 32w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-4.5c6d0ed6.jpg&amp;w=48&amp;q=75 48w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-4.5c6d0ed6.jpg&amp;w=64&amp;q=75 64w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-4.5c6d0ed6.jpg&amp;w=96&amp;q=75 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-4.5c6d0ed6.jpg&amp;w=128&amp;q=75 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-4.5c6d0ed6.jpg&amp;w=256&amp;q=75 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-4.5c6d0ed6.jpg&amp;w=384&amp;q=75 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-4.5c6d0ed6.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-4.5c6d0ed6.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-4.5c6d0ed6.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-4.5c6d0ed6.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-4.5c6d0ed6.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-4.5c6d0ed6.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-4.5c6d0ed6.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-4.5c6d0ed6.jpg&amp;w=3840&amp;q=75 3840w"
-                         src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-4.5c6d0ed6.jpg&amp;w=3840&amp;q=75"
-                         width="2400" height="3000" decoding="async" data-nimg="1"
+                         src="img/kwekerijvh-home.jpg"
                          class="absolute inset-0 h-full w-full object-cover" loading="lazy"
                          style="color:transparent"></div>
                 <div
                     class="relative aspect-[16/9] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2">
                     <img alt="" sizes="(min-width: 640px) 18rem, 11rem"
-                         srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-5.6c6f2784.jpg&amp;w=16&amp;q=75 16w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-5.6c6f2784.jpg&amp;w=32&amp;q=75 32w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-5.6c6f2784.jpg&amp;w=48&amp;q=75 48w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-5.6c6f2784.jpg&amp;w=64&amp;q=75 64w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-5.6c6f2784.jpg&amp;w=96&amp;q=75 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-5.6c6f2784.jpg&amp;w=128&amp;q=75 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-5.6c6f2784.jpg&amp;w=256&amp;q=75 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-5.6c6f2784.jpg&amp;w=384&amp;q=75 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-5.6c6f2784.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-5.6c6f2784.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-5.6c6f2784.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-5.6c6f2784.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-5.6c6f2784.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-5.6c6f2784.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-5.6c6f2784.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-5.6c6f2784.jpg&amp;w=3840&amp;q=75 3840w"
-                         src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-5.6c6f2784.jpg&amp;w=3840&amp;q=75"
-                         width="4240" height="2384" decoding="async" data-nimg="1"
+                         src="img/kwekerijvh-home.jpg"
                          class="absolute inset-0 h-full w-full object-cover" loading="lazy"
                          style="color:transparent"></div>
             </div>
@@ -79,125 +69,108 @@
                 <div class="relative px-4 sm:px-8 lg:px-12">
                     <div class="mx-auto max-w-2xl lg:max-w-5xl">
                         <div class="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-                            <div class="flex flex-col gap-16">
-                                <article class="group relative flex flex-col items-start">
-                                    <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                                        <div
-                                            class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                                        <a href="/articles/crafting-a-design-system-for-a-multiplanetary-future"><span
-                                            class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span><span
-                                            class="relative z-10">Crafting a design system for a multiplanetary future</span></a>
-                                    </h2>
-                                    <time
-                                        class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5"
-                                        datetime="2022-09-05"><span
-                                        class="absolute inset-y-0 left-0 flex items-center"
-                                        aria-hidden="true"><span
-                                        class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span></span>September
-                                        5, 2022
-                                    </time>
-                                    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Most
-                                        companies try to stay ahead of the curve when it comes to visual design, but
-                                        for Planetaria we needed to create a brand that would still inspire us 100
-                                        years from now when humanity has spread across our entire solar system.</p>
-                                    <div aria-hidden="true"
-                                         class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
-                                        Read article
-                                        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"
-                                             class="ml-1 h-4 w-4 stroke-current">
-                                            <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5"
-                                                  stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                    </div>
-                                </article>
-                                <article class="group relative flex flex-col items-start">
-                                    <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                                        <div
-                                            class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                                        <a href="/articles/introducing-animaginary"><span
-                                            class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span><span
-                                            class="relative z-10">Introducing Animaginary: High performance web animations</span></a>
-                                    </h2>
-                                    <time
-                                        class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5"
-                                        datetime="2022-09-02"><span
-                                        class="absolute inset-y-0 left-0 flex items-center"
-                                        aria-hidden="true"><span
-                                        class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span></span>September
-                                        2, 2022
-                                    </time>
-                                    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">When
-                                        you’re building a website for a company as ambitious as Planetaria, you need
-                                        to make an impression. I wanted people to visit our website and see
-                                        animations that looked more realistic than reality itself.</p>
-                                    <div aria-hidden="true"
-                                         class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
-                                        Read article
-                                        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"
-                                             class="ml-1 h-4 w-4 stroke-current">
-                                            <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5"
-                                                  stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                    </div>
-                                </article>
-                                <article class="group relative flex flex-col items-start">
-                                    <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                                        <div
-                                            class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                                        <a href="/articles/rewriting-the-cosmos-kernel-in-rust"><span
-                                            class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span><span
-                                            class="relative z-10">Rewriting the cosmOS kernel in Rust</span></a>
-                                    </h2>
-                                    <time
-                                        class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5"
-                                        datetime="2022-07-14"><span
-                                        class="absolute inset-y-0 left-0 flex items-center"
-                                        aria-hidden="true"><span
-                                        class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span></span>July
-                                        14, 2022
-                                    </time>
-                                    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">When we
-                                        released the first version of cosmOS last year, it was written in Go. Go is
-                                        a wonderful programming language, but it’s been a while since I’ve seen an
-                                        article on the front page of Hacker News about rewriting some important tool
-                                        in Go and I see articles on there about rewriting things in Rust every
-                                        single week.</p>
-                                    <div aria-hidden="true"
-                                         class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
-                                        Read article
-                                        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"
-                                             class="ml-1 h-4 w-4 stroke-current">
-                                            <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5"
-                                                  stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                    </div>
-                                </article>
+                            <div>
+                                <h1 class="text-lg sm:text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
+                                    Mijn laatste projecten
+                                </h1>
+                                <div class="flex flex-col mt-6 gap-16">
+                                    <article class="group relative flex flex-col items-start">
+                                        <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                                            <div
+                                                class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
+                                            <a href="/articles/crafting-a-design-system-for-a-multiplanetary-future"><span
+                                                class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span><span
+                                                class="relative z-10">Crafting a design system for a multiplanetary future</span></a>
+                                        </h2>
+                                        <time
+                                            class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5"
+                                            datetime="2022-09-05"><span
+                                            class="absolute inset-y-0 left-0 flex items-center"
+                                            aria-hidden="true"><span
+                                            class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span></span>September
+                                            5, 2022
+                                        </time>
+                                        <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Most
+                                            companies try to stay ahead of the curve when it comes to visual design, but
+                                            for Planetaria we needed to create a brand that would still inspire us 100
+                                            years from now when humanity has spread across our entire solar system.</p>
+                                        <div aria-hidden="true"
+                                             class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+                                            Read article
+                                            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"
+                                                 class="ml-1 h-4 w-4 stroke-current">
+                                                <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5"
+                                                      stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                    </article>
+                                    <article class="group relative flex flex-col items-start">
+                                        <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                                            <div
+                                                class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
+                                            <a href="/articles/introducing-animaginary"><span
+                                                class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span><span
+                                                class="relative z-10">Introducing Animaginary: High performance web animations</span></a>
+                                        </h2>
+                                        <time
+                                            class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5"
+                                            datetime="2022-09-02"><span
+                                            class="absolute inset-y-0 left-0 flex items-center"
+                                            aria-hidden="true"><span
+                                            class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span></span>September
+                                            2, 2022
+                                        </time>
+                                        <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">When
+                                            you’re building a website for a company as ambitious as Planetaria, you need
+                                            to make an impression. I wanted people to visit our website and see
+                                            animations that looked more realistic than reality itself.</p>
+                                        <div aria-hidden="true"
+                                             class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+                                            Read article
+                                            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"
+                                                 class="ml-1 h-4 w-4 stroke-current">
+                                                <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5"
+                                                      stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                    </article>
+                                    <article class="group relative flex flex-col items-start">
+                                        <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                                            <div
+                                                class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
+                                            <a href="/articles/rewriting-the-cosmos-kernel-in-rust"><span
+                                                class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span><span
+                                                class="relative z-10">Rewriting the cosmOS kernel in Rust</span></a>
+                                        </h2>
+                                        <time
+                                            class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5"
+                                            datetime="2022-07-14"><span
+                                            class="absolute inset-y-0 left-0 flex items-center"
+                                            aria-hidden="true"><span
+                                            class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span></span>July
+                                            14, 2022
+                                        </time>
+                                        <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">When we
+                                            released the first version of cosmOS last year, it was written in Go. Go is
+                                            a wonderful programming language, but it’s been a while since I’ve seen an
+                                            article on the front page of Hacker News about rewriting some important tool
+                                            in Go and I see articles on there about rewriting things in Rust every
+                                            single week.</p>
+                                        <div aria-hidden="true"
+                                             class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+                                            Read article
+                                            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"
+                                                 class="ml-1 h-4 w-4 stroke-current">
+                                                <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5"
+                                                      stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                    </article>
+                                </div>
+
                             </div>
                             <div class="space-y-10 lg:pl-16 xl:pl-24">
-                                <form action="/thank-you"
-                                      class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-                                    <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"
-                                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
-                                             class="h-6 w-6 flex-none">
-                                            <path
-                                                d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-                                                class="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"></path>
-                                            <path d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
-                                                  class="stroke-zinc-400 dark:stroke-zinc-500"></path>
-                                        </svg>
-                                        <span class="ml-3">Stay up to date</span></h2>
-                                    <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">Get notified when I
-                                        publish something new, and unsubscribe at any time.</p>
-                                    <div class="mt-6 flex"><input type="email" placeholder="Email address"
-                                                                  aria-label="Email address" required=""
-                                                                  class="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm">
-                                        <button
-                                            class="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-800 font-semibold text-zinc-100 hover:bg-zinc-700 active:bg-zinc-800 active:text-zinc-100/70 dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700 dark:active:text-zinc-100/70 ml-4 flex-none"
-                                            type="submit">Join
-                                        </button>
-                                    </div>
-                                </form>
+                                <ContactForm/>
                                 <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
                                     <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
                                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"
@@ -327,10 +300,11 @@
 
 <script>
 import Layout from "../Layout.vue";
+import ContactForm from "../components/ContactForm.vue";
 
 export default {
     name: "Home",
-    components: {Layout}
+    components: {ContactForm, Layout}
 }
 </script>
 
