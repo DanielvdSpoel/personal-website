@@ -13,12 +13,12 @@
                                     <Link class="transition hover:text-teal-500 dark:hover:text-teal-400" :href="route('projects', {language: route().params.language})">
                                         {{ $t('pages.navigation.projects')}}
                                     </link>
-                                    <Link class="transition hover:text-teal-500 dark:hover:text-teal-400" :href="route('uses', {language: route().params.language})">
-                                        {{ $t('pages.navigation.uses')}}
+                                    <Link class="transition hover:text-teal-500 dark:hover:text-teal-400" :href="route('skills', {language: route().params.language})">
+                                        {{ $t('pages.navigation.skills')}}
                                     </link>
                                 </div>
                                 <p class="text-sm text-zinc-400 dark:text-zinc-500">
-                                    © 2023 Daniel van der Spoel. All rights reserved.
+                                    © {{ currentYear }} Daniël van der Spoel. All rights reserved.
                                 </p>
                             </div>
                         </div>
@@ -34,7 +34,12 @@ import {Link} from "@inertiajs/vue3";
 
 export default {
     name: "FooterNavigation",
-    components: {Link}
+    components: {Link},
+    computed: {
+        currentYear() {
+            return new Date().getFullYear();
+        }
+    }
 
 }
 </script>

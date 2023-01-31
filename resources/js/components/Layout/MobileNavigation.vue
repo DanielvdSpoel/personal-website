@@ -55,8 +55,8 @@
                                 </Link>
                             </li>
                             <li>
-                                <Link class="block py-2" :href="route('uses', {language: route().params.language})">
-                                    {{ $t('pages.navigation.uses') }}
+                                <Link class="block py-2" :href="route('skills', {language: route().params.language})">
+                                    {{ $t('pages.navigation.skills') }}
                                 </Link>
                             </li>
                         </ul>

@@ -132,10 +132,10 @@
 
 <script>
 import Layout from "../Layout.vue";
-import ContactForm from "../components/ContactForm.vue";
-import EmployerRow from "../components/EmployerRow.vue";
+import ContactForm from "../components/Home/ContactForm.vue";
+import EmployerRow from "../components/Home/EmployerRow.vue";
 import {Link} from '@inertiajs/vue3'
-import ProjectRow from "../components/ProjectRow.vue";
+import ProjectRow from "../components/Home/ProjectRow.vue";
 
 export default {
     name: "Home",

@@ -24,11 +24,8 @@
 </template>
 
 <script>
-import LanguageButton from "./LanguageButton.vue";
-
 export default {
     name: "DarkModeButton",
-    components: {LanguageButton},
     methods: {
         toggleDarkMode() {
             document.querySelector('html').classList.toggle('dark')

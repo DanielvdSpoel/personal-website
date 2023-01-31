@@ -41,10 +41,10 @@
                                 <div class="flex flex-1 justify-end md:justify-center">
                                     <MobileNavigation/>
                                     <nav class="pointer-events-auto hidden md:block">
-                                        <ul class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+                                        <ul class="flex whitespace-nowrap rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
                                             <NavLink route-name="about" :label="$t('pages.navigation.about')"/>
                                             <NavLink route-name="projects" :label="$t('pages.navigation.projects')"/>
-                                            <NavLink route-name="uses" :label="$t('pages.navigation.uses')"/>
+                                            <NavLink route-name="skills" :label="$t('pages.navigation.skills')"/>
                                         </ul>
                                     </nav>
                                 </div>
@@ -67,11 +67,10 @@ import DarkModeButton from "./DarkModeButton.vue";
 import MobileNavigation from "./MobileNavigation.vue";
 import {Link} from '@inertiajs/vue3'
 import NavLink from "./NavLink.vue";
-import LanguageButton from "./LanguageButton.vue";
 
 export default {
     name: "NavigationHeader",
-    components: {LanguageButton, NavLink, MobileNavigation, DarkModeButton, Link}
+    components: {NavLink, MobileNavigation, DarkModeButton, Link}
 }
 </script>
 

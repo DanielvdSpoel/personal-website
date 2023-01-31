@@ -16,10 +16,10 @@
 </template>
 
 <script>
-import Navbar from "./components/NavigationHeader.vue";
-import FooterNavigation from "./components/FooterNavigation.vue";
-import DarkModeButton from "./components/DarkModeButton.vue";
-import NavigationHeader from "./components/NavigationHeader.vue";
+import Navbar from "./components/Layout/NavigationHeader.vue";
+import FooterNavigation from "./components/Layout/FooterNavigation.vue";
+import DarkModeButton from "./components/Layout/DarkModeButton.vue";
+import NavigationHeader from "./components/Layout/NavigationHeader.vue";
 export default {
 name: "Layout",
     components: {NavigationHeader, DarkModeButton, FooterNavigation, Navbar}

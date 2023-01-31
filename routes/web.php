@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('/{language}')->group(function () {
     Route::get('/', HomeController::class)->name('home');
     Route::inertia('/about', 'About')->name('about');
-    Route::inertia('/uses', 'Uses')->name('uses');
+    Route::inertia('/skills', 'Skills')->name('skills');
 
     Route::prefix('/projects')->group(function () {
         Route::get('/', [ProjectController::class, 'index'])->name('projects');

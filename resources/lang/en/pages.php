@@ -20,7 +20,7 @@ return [
         'home' => 'Home',
         'about' => 'About',
         'projects' => 'Projects',
-        'uses' => 'How do I work?',
+        'skills' => 'Skills',
     ],
     'contact' => [
         'titel' => ':name has send you a message',

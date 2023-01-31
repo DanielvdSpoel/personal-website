@@ -16,11 +16,14 @@ return [
             'view_all' => "Bekijk alle projecten",
         ]
     ],
+    'about' => [
+        'title' => "Ik ben Daniël van der Spoel. I live in the Netherlands, where I develop the next generation of web applications.",
+    ],
     'navigation' => [
         'home' => 'Home',
         'about' => 'Over mij',
         'projects' => 'Projecten',
-        'uses' => 'Hoe werk ik?',
+        'skills' => 'Vaardigheden',
     ],
     'contact' => [
         'titel' => ':name heeft je een bericht gestuurd',
