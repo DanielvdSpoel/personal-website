@@ -7,13 +7,13 @@
                         <div class="mx-auto max-w-2xl lg:max-w-5xl">
                             <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
                                 <div class="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                                    <Link class="transition hover:text-teal-500 dark:hover:text-teal-400" :href="route('about')">
+                                    <Link class="transition hover:text-teal-500 dark:hover:text-teal-400" :href="route('about', {language: route().params.language})">
                                         {{ $t('pages.navigation.about')}}
                                     </link>
-                                    <Link class="transition hover:text-teal-500 dark:hover:text-teal-400" :href="route('projects')">
+                                    <Link class="transition hover:text-teal-500 dark:hover:text-teal-400" :href="route('projects', {language: route().params.language})">
                                         {{ $t('pages.navigation.projects')}}
                                     </link>
-                                    <Link class="transition hover:text-teal-500 dark:hover:text-teal-400" :href="route('uses')">
+                                    <Link class="transition hover:text-teal-500 dark:hover:text-teal-400" :href="route('uses', {language: route().params.language})">
                                         {{ $t('pages.navigation.uses')}}
                                     </link>
                                 </div>

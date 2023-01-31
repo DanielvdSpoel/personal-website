@@ -16,14 +16,7 @@ class SelectCorrectLanguageMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        $englishDomains = explode(',', config('app.english_domains'));
-        $dutchDomains = explode(',', config('app.dutch_domains'));
-
-        if (in_array($request->getHttpHost(), $englishDomains)) {
-            app()->setLocale('en');
-        } elseif (in_array($request->getHttpHost(), $dutchDomains)) {
-            app()->setLocale('nl');
-        }
+        app()->setLocale($request->language);
         return $next($request);
     }
 }

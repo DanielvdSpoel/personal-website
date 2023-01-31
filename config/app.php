@@ -15,6 +15,8 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    'contact_form_email' => env('CONTACT_FORM_EMAIL', 'contact@danielvdspoel.nl'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
@@ -233,5 +235,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+
+
 
 ];

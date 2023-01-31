@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,8 +13,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::prefix('/{language}')->group(function () {
+    Route::inertia('/', 'Home')->name('home');
+    Route::inertia('/about', 'About')->name('about');
+    Route::inertia('/projects', 'Projects')->name('projects');
+    Route::inertia('/uses', 'Uses')->name('uses');
+    Route::post('/contact', ContactController::class)->name('contact');
 
-Route::inertia('/', 'Home')->name('home');
-Route::inertia('/about', 'About')->name('about');
-Route::inertia('/projects', 'Projects')->name('projects');
-Route::inertia('/uses', 'Uses')->name('uses');
+});
+
+

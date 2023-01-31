@@ -14,4 +14,11 @@ return [
         'projects' => 'Projects',
         'uses' => 'How do I work?',
     ],
+    'contact' => [
+        'titel' => ':name has send you a message',
+        'from' => 'From:',
+        'client_email' => 'Client email:',
+        'message' => 'Message:',
+        'success' => 'Thank you for your message! I will get back to you within 48 hours.',
+    ]
 ];
