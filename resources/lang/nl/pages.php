@@ -19,6 +19,10 @@ return [
     'about' => [
         'title' => "Ik ben Daniël van der Spoel. I live in the Netherlands, where I develop the next generation of web applications.",
     ],
+    'skills' => [
+        'title' => "Een developer zonder vaardigheden is geen echte developer.",
+        'description' => "Ik programmeer al zeven jaar. Onderweg heb ik veel vaardigheden opgedaan. Zowel met programmeertalen en frameworks, maar ook met andere tools. Hieronder vindt u een lijst met de vaardigheden die ik heb.",
+    ],
     'navigation' => [
         'home' => 'Home',
         'about' => 'Over mij',

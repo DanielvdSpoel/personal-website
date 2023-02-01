@@ -16,6 +16,10 @@ return [
             'view_all' => "View all projects",
         ]
     ],
+    'skills' => [
+        'title' => "A developer without skills is no real developer.",
+        'description' => "I've been programming for the past seven years. On the way I picked up a lot of skills. Both with programming languages and frameworks, but also with other tools. Below you can find a list of the skills I have.",
+    ],
     'navigation' => [
         'home' => 'Home',
         'about' => 'About',

@@ -3,6 +3,7 @@
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\SkillController;
 use App\Models\Project;
 use Illuminate\Support\Facades\Route;
 
@@ -16,11 +17,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::redirect('/', '/en');
 
 Route::prefix('/{language}')->group(function () {
     Route::get('/', HomeController::class)->name('home');
     Route::inertia('/about', 'About')->name('about');
-    Route::inertia('/skills', 'Skills')->name('skills');
+
+    Route::get('/skills', SkillController::class)->name('skills');
 
     Route::prefix('/projects')->group(function () {
         Route::get('/', [ProjectController::class, 'index'])->name('projects');
