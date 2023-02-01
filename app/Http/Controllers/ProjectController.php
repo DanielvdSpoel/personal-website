@@ -18,8 +18,8 @@ class ProjectController extends Controller
 
     public function show(string $language, Project $project)
     {
-        dd($project);
-        return inertia('Project', [
+        $project->load('media');
+        return inertia('ViewProject', [
             'project' => $project,
         ]);
     }

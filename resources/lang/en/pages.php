@@ -20,6 +20,15 @@ return [
         'title' => "A developer without skills is no real developer.",
         'description' => "I've been programming for the past seven years. On the way I picked up a lot of skills. Both with programming languages and frameworks, but also with other tools. Below you can find a list of the skills I have.",
     ],
+    'projects' => [
+        'title' => "In my opinion, you only really learn programming if you try to build things.",
+        'description' => "The past few years i've worked on quite the collection of projects. This page includes the projects I did for myself and for my clients. Each project has a dedicated page where you can find more information on the project.",
+        'view_project' => "View project",
+    ],
+    'project' => [
+        'back' => "Back to projects",
+        'media' => "Pictures of the project",
+    ],
     'navigation' => [
         'home' => 'Home',
         'about' => 'About',

@@ -29,6 +29,7 @@
         "@vue/server-renderer": "^3.2.45",
         "luxon": "^3.2.1",
         "vue": "^3.2.29",
-        "vue-i18n": "^9.1.9"
+        "vue-i18n": "^9.1.9",
+        "vue3-carousel": "^0.2.9"
     }
 }
