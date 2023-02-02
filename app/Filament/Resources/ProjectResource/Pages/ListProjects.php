@@ -9,7 +9,7 @@ use Filament\Resources\Pages\ListRecords;
 
 class ListProjects extends ListRecords
 {
-    use TranslatableWithEmit;
+    use ListRecords\Concerns\Translatable;
 
     protected static string $resource = ProjectResource::class;
 

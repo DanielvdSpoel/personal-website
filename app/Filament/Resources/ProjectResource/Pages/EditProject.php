@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class EditProject extends EditRecord
 {
-    use TranslatableWithEmit;
+    use EditRecord\Concerns\Translatable;
 
     protected static string $resource = ProjectResource::class;
 

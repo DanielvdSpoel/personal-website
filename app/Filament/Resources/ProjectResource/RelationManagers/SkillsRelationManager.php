@@ -3,18 +3,15 @@
 namespace App\Filament\Resources\ProjectResource\RelationManagers;
 
 use App\Models\Skill;
-use App\Traits\HasTranslatableOwner;
 use Filament\Forms;
 use Filament\Resources\Form;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\Table;
 use Filament\Tables;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class SkillsRelationManager extends RelationManager
 {
-    use HasTranslatableOwner;
+
     protected static string $relationship = 'skills';
 
     protected static ?string $recordTitleAttribute = 'name->en';

@@ -12,7 +12,7 @@ use Filament\Resources\Pages\CreateRecord;
 
 class CreateProject extends CreateRecord
 {
-    use TranslatableWithEmit;
+    use CreateRecord\Concerns\Translatable;
 
     protected static string $resource = ProjectResource::class;
 
