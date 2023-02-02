@@ -37,6 +37,7 @@ return [
     'project' => [
         'back' => "Terug naar projecten",
         'media' => "Afbeeldingen van het project",
+        'skills' => "Vaardigheden gebruikt in dit project",
     ],
     'navigation' => [
         'home' => 'Home',

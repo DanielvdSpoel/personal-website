@@ -2,12 +2,11 @@
 
 namespace App\Models;
 
+use App\Traits\HasTranslations;
 use Awcodes\Curator\Models\Media;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use App\Models\Traits\HasTranslations;
 
 class Project extends Model
 {
@@ -34,5 +33,9 @@ class Project extends Model
         return $this->belongsToMany(Media::class)->withPivot('theme_availability');
     }
 
+    public function skills(): BelongsToMany
+    {
+        return $this->belongsToMany(Skill::class)->withPivot('sort_order');
+    }
 
 }

@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use App\Models\Traits\HasTranslations;
+use App\Traits\HasTranslations;
 use Awcodes\Curator\Models\Media;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -22,6 +22,7 @@ class Employer extends Model
     ];
 
     public array $translatable = [
+        'name',
         'position',
         'description',
     ];

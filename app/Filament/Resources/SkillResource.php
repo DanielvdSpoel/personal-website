@@ -66,7 +66,8 @@ class SkillResource extends Resource
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),
-            ]);
+            ])
+            ->reorderable();
     }
 
     public static function getRelations(): array

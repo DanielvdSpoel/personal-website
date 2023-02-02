@@ -19,6 +19,7 @@ class ProjectController extends Controller
     public function show(string $language, Project $project)
     {
         $project->load('media');
+        $project->load('skills.media');
         return inertia('ViewProject', [
             'project' => $project,
         ]);

@@ -75,7 +75,6 @@ class EmployerResource extends Resource
                         // Only render the tooltip if the column contents exceeds the length limit.
                         return $state;
                     })
-
             ])
             ->filters([
                 //

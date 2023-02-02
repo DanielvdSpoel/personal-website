@@ -1,6 +1,7 @@
 <?php
 
-use Awcodes\Curator\Models\Media;
+use App\Models\Project;
+use App\Models\Skill;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -14,14 +15,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('skills', function (Blueprint $table) {
+        Schema::create('project_skill', function (Blueprint $table) {
             $table->id();
-            $table->json('name');
-            $table->json('description');
-            $table->foreignIdFor(Media::class)->nullable()->constrained()->nullOnDelete();
-            $table->integer('sort')->nullable();
-            $table->string('url');
-            $table->timestamps();
+            $table->foreignIdFor(Project::class)->constrained()->cascadeOnDelete();
+            $table->foreignIdFor(Skill::class)->constrained()->cascadeOnDelete();
+            $table->integer('sort_order')->nullable();
         });
     }
 
@@ -32,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('skills');
+        Schema::dropIfExists('project_skill');
     }
 };

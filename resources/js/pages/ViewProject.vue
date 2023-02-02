@@ -33,17 +33,23 @@
                         </header>
                         <div class="mt-8 prose dark:prose-invert" v-html="project.content">
                         </div>
+                        <div v-if="project.skills.length > 0">
+                            <h3 class="mt-6 mb-4 text-xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">
+                                {{ $t('pages.project.skills') }}
+                                <ul role="list" class="my-8 grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+                                    <SkillRow v-for="skill in project.skills" :key="skill.id" :skill="skill"/>
+                                </ul>
+                            </h3>
+                        </div>
+
+
                         <div v-if="project.media.length > 0">
                             <h3 class="mt-6 mb-4 text-xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">
                                 {{ $t('pages.project.media') }}
                             </h3>
                             <carousel :items-to-show="3" :wrapAround="true" :autoplay="5000"
                                       :pauseAutoplayOnHover="true">
-                                <slide v-for="medium in project.media" :key="medium.id" :class="{'dark:hidden': medium.pivot.theme_availability === 'white', 'hidden dark:block': medium.pivot.theme_availability === 'dark'}">
-                                    <img :src="medium.url" :alt="medium.alt"
-
-                                         class="w-full h-full object-cover p-2 rounded-xl">
-                                </slide>
+                                <MediaSlide v-for="media in project.media" :key="media.id" :media="media"/>
 
                                 <template #addons>
                                     <pagination/>
@@ -64,14 +70,15 @@ import {Link} from '@inertiajs/vue3'
 import {DateTime} from "luxon";
 import 'vue3-carousel/dist/carousel.css'
 import {Carousel, Slide, Pagination, Navigation} from 'vue3-carousel'
+import SkillRow from "../components/Skills/SkillRow.vue";
+import MediaSlide from "../components/Project/MediaSlide.vue";
 
 export default {
     name: "ViewProject",
     components: {
+        MediaSlide,
+        SkillRow,
         Container, Layout, Link, Carousel, Slide, Pagination, Navigation,
-    },
-    mounted() {
-        console.log("darkmode: " + this.isDarkModeToggled)
     },
     props: {
         project: Object,

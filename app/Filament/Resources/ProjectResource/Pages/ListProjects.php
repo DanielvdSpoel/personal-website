@@ -3,12 +3,13 @@
 namespace App\Filament\Resources\ProjectResource\Pages;
 
 use App\Filament\Resources\ProjectResource;
+use App\Traits\TranslatableWithEmit;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\ListRecords;
 
 class ListProjects extends ListRecords
 {
-    use ListRecords\Concerns\Translatable;
+    use TranslatableWithEmit;
 
     protected static string $resource = ProjectResource::class;
 

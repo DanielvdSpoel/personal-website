@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Traits;
+namespace App\Traits;
 
 use App;
 use Spatie\Translatable\HasTranslations as BaseHasTranslations;

@@ -37,6 +37,7 @@ return [
     'project' => [
         'back' => "Back to projects",
         'media' => "Pictures of the project",
+        'skills' => "Skills used in this project",
     ],
     'navigation' => [
         'home' => 'Home',
