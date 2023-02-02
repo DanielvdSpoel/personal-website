@@ -32,36 +32,13 @@
         </div>
         <div class="mt-16 sm:mt-20">
             <div class="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-                <div
+                <div v-for="medium in media" :key="medium.id" :class="{'dark:hidden': medium.pivot.theme_availability === 'white', 'hidden dark:block': medium.pivot.theme_availability === 'dark'}"
                     class="relative aspect-[16/9] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
-                    <img alt="" sizes="(min-width: 640px) 18rem, 11rem"
-                         src="img/kwekerijvh-home.jpg"
+                    <img :alt="medium.alt" sizes="(min-width: 640px) 18rem, 11rem"
+                         :src="medium.url"
                          class="absolute inset-0 h-full w-full object-cover" loading="lazy"
-                         style="color:transparent"></div>
-                <div
-                    class="relative aspect-[16/9] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2">
-                    <img alt="" sizes="(min-width: 640px) 18rem, 11rem"
-                         src="img/kwekerijvh-home.jpg"
-                         class="absolute inset-0 h-full w-full object-cover" loading="lazy"
-                         style="color:transparent"></div>
-                <div
-                    class="relative aspect-[16/9] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
-                    <img alt="" sizes="(min-width: 640px) 18rem, 11rem"
-                         src="img/kwekerijvh-home.jpg"
-                         class="absolute inset-0 h-full w-full object-cover" loading="lazy"
-                         style="color:transparent"></div>
-                <div
-                    class="relative aspect-[16/9] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
-                    <img alt="" sizes="(min-width: 640px) 18rem, 11rem"
-                         src="img/kwekerijvh-home.jpg"
-                         class="absolute inset-0 h-full w-full object-cover" loading="lazy"
-                         style="color:transparent"></div>
-                <div
-                    class="relative aspect-[16/9] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2">
-                    <img alt="" sizes="(min-width: 640px) 18rem, 11rem"
-                         src="img/kwekerijvh-home.jpg"
-                         class="absolute inset-0 h-full w-full object-cover" loading="lazy"
-                         style="color:transparent"></div>
+                         style="color:transparent">
+                </div>
             </div>
         </div>
         <div class="sm:px-8 mt-24 md:mt-28">
@@ -110,7 +87,7 @@
                                         <EmployerRow v-for="employer in employers" :key="employer.id"
                                                      :employer="employer"/>
                                     </ol>
-                                    <a class="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-50 font-medium text-zinc-900 hover:bg-zinc-100 active:bg-zinc-100 active:text-zinc-900/60 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70 group mt-6 w-full"
+                                    <!--<a class="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-50 font-medium text-zinc-900 hover:bg-zinc-100 active:bg-zinc-100 active:text-zinc-900/60 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70 group mt-6 w-full"
                                        href="/#">
                                         {{ $t('pages.home.employers.download_cv')}}
                                         <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"
@@ -119,7 +96,7 @@
                                                   stroke-width="1.5" stroke-linecap="round"
                                                   stroke-linejoin="round"></path>
                                         </svg>
-                                    </a>
+                                    </a>-->
                                 </div>
                             </div>
                         </div>
@@ -143,6 +120,7 @@ export default {
     props: {
         employers: Array,
         projects: Array,
+        media: Array,
     }
 }
 </script>

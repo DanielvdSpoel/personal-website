@@ -24,7 +24,7 @@
             {{ completionDate }}
         </time>
         <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            {{ project.description }}
+            {{ project.description }}...
         </p>
         <div aria-hidden="true"
              class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">

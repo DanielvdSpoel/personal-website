@@ -33,14 +33,15 @@
                         </header>
                         <div class="mt-8 prose dark:prose-invert" v-html="project.content">
                         </div>
-                        <div v-if="media.length > 0">
+                        <div v-if="project.media.length > 0">
                             <h3 class="mt-6 mb-4 text-xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">
                                 {{ $t('pages.project.media') }}
                             </h3>
                             <carousel :items-to-show="3" :wrapAround="true" :autoplay="5000"
                                       :pauseAutoplayOnHover="true">
-                                <slide v-for="medium in media" :key="media.id">
+                                <slide v-for="medium in project.media" :key="medium.id" :class="{'dark:hidden': medium.pivot.theme_availability === 'white', 'hidden dark:block': medium.pivot.theme_availability === 'dark'}">
                                     <img :src="medium.url" :alt="medium.alt"
+
                                          class="w-full h-full object-cover p-2 rounded-xl">
                                 </slide>
 
@@ -69,6 +70,9 @@ export default {
     components: {
         Container, Layout, Link, Carousel, Slide, Pagination, Navigation,
     },
+    mounted() {
+        console.log("darkmode: " + this.isDarkModeToggled)
+    },
     props: {
         project: Object,
     },
@@ -76,15 +80,11 @@ export default {
         completionDate() {
             return this.project.completed_at == null ? this.$t('labels.not_completed_yet') : DateTime.fromISO(this.project.completed_at).toLocaleString(DateTime.DATE_FULL);
         },
-        media() {
-            return this.project.media;
-        }
+
+
     }
 }
 </script>
 
 <style scoped>
-.carousel__pagination-button {
-    background-color: red;
-}
 </style>

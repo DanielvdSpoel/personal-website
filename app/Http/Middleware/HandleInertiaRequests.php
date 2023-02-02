@@ -41,6 +41,8 @@ class HandleInertiaRequests extends Middleware
         $translationSupport = new TranslationSupport();
         return array_merge(parent::share($request), [
             'translations' => $translationSupport->getTranslationStrings(),
+            'language' => $request->language,
+            'darkMode' => session('darkMode', null),
         ]);
     }
 }

@@ -28,6 +28,7 @@
         "@inertiajs/vue3": "^1.0.0",
         "@vue/server-renderer": "^3.2.45",
         "luxon": "^3.2.1",
+        "pinia": "^2.0.30",
         "vue": "^3.2.29",
         "vue-i18n": "^9.1.9",
         "vue3-carousel": "^0.2.9"

@@ -24,16 +24,36 @@
 </template>
 
 <script>
+
 export default {
     name: "DarkModeButton",
     methods: {
         toggleDarkMode() {
-            document.querySelector('html').classList.toggle('dark')
+            document.documentElement.classList.toggle('dark')
+            const isDark = document.documentElement.classList.contains('dark')
+            if (isDark) {
+                window.localStorage.setItem('darkMode', 'true')
+            } else {
+                window.localStorage.setItem('darkMode', 'false')
+            }
         }
     },
     mounted() {
+        if (window.localStorage.getItem('darkMode') !== null) {
+            if (window.localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark')
+            } else {
+                document.documentElement.classList.remove('dark')
+            }
+            return
+        }
+
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.querySelector('html').classList.add('dark')
+            document.documentElement.classList.add('dark')
+            window.localStorage.setItem('darkMode', true);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            document.documentElement.classList.remove('dark')
+            window.localStorage.setItem('darkMode', false);
         }
     }
 }
