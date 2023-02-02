@@ -84,8 +84,7 @@ return [
 
     'locale' => 'en',
 
-    'dutch_domains' => env('DUTCH_LANGUAGE_DOMAINS', ''),
-    'english_domains' => env('ENGLISH_LANGUAGE_DOMAINS', ''),
+    'redirect_domains' => env('REDIRECT_DOMAINS', ''),
 
     /*
     |--------------------------------------------------------------------------
