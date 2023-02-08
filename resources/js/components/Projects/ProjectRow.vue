@@ -52,7 +52,7 @@ export default {
     },
     computed: {
         completionDate() {
-            return this.project.completed_at == null ? this.$t('labels.not_completed_yet') : DateTime.fromISO(this.project.completed_at).toLocaleString(DateTime.DATE_FULL);
+            return this.project.completed_at == null ? this.$t('labels.not_completed_yet') : DateTime.fromISO(this.project.completed_at).toLocaleString({month: 'long', year: 'numeric'});
         }
     }
 }

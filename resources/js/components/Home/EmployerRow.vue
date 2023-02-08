@@ -38,10 +38,10 @@ export default {
     },
     computed: {
         startDate() {
-            return DateTime.fromISO(this.employer.start_date).toFormat('yyyy');
+            return DateTime.fromISO(this.employer.start_date).toLocaleString({month: 'long', year: 'numeric'});
         },
         endDate() {
-            return this.employer.end_date == null ? this.$t('labels.present') : DateTime.fromISO(this.employer.end_date).toFormat('yyyy');
+            return this.employer.end_date == null ? this.$t('labels.present') : DateTime.fromISO(this.employer.end_date).toLocaleString({month: 'long', year: 'numeric'});
         }
     }
 }

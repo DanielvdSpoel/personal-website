@@ -13,6 +13,7 @@ use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
+use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
@@ -55,7 +56,19 @@ class SkillResource extends Resource
                 Tables\Columns\TextColumn::make('name')
                     ->searchable()->sortable(),
                 Tables\Columns\TextColumn::make('description')
-                    ->searchable()->sortable(),
+                    ->searchable()->sortable()
+                    ->limit(50)
+                    ->tooltip(function (TextColumn $column): ?string {
+                        $state = $column->getState();
+
+                        if (strlen($state) <= $column->getLimit()) {
+                            return null;
+                        }
+
+                        // Only render the tooltip if the column contents exceeds the length limit.
+                        return $state;
+                    }),
+
                 Tables\Columns\TextColumn::make('url'),
             ])
             ->filters([
