@@ -20,7 +20,6 @@ class SelectCorrectLanguageMiddleware
         if (in_array($request->getHost(), $redirect_domains)) {
             return redirect(route('home', ['language' => 'nl']));
         }
-
         app()->setLocale($request->language);
         return $next($request);
     }

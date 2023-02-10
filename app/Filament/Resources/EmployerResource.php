@@ -41,6 +41,7 @@ class EmployerResource extends Resource
                     ->required()
                     ->maxLength(255),
                 CuratorPicker::make('media_id')
+                    ->label('Logo')
                     ->required(),
                 Textarea::make('description')
                     ->maxLength(255),

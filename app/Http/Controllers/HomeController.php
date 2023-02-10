@@ -43,8 +43,6 @@ class HomeController extends Controller
                 }
             });
         });
-//        dd($media->toArray());
-
 
         return inertia('Home', [
             'projects' => Project::orderBy('completed_at')

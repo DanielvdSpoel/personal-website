@@ -20,6 +20,12 @@
   */
 
 /*!
+  * vue-i18n v9.2.2
+  * (c) 2022 kazuya kawaguchi
+  * Released under the MIT License.
+  */
+
+/*!
  * The buffer module from node.js, for the browser.
  *
  * @author   Feross Aboukhadijeh <http://feross.org>

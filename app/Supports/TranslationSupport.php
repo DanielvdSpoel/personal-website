@@ -13,6 +13,7 @@ class TranslationSupport
 
     public function getTranslationStrings()
     {
+        $old_language = App::getLocale();
 
         $path = resource_path('lang');
         $dir = new DirectoryIterator($path);
@@ -56,6 +57,7 @@ class TranslationSupport
             throw new Exception('Could not generate JSON, error code ' . json_last_error());
         }
 
+        App::setLocale($old_language);
         return $jsonLocales;
 
     }
