@@ -2,10 +2,13 @@
 
 namespace App\Providers;
 
+use App\Models\ContactRequest;
 use Filament\Facades\Filament;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\ServiceProvider;
 use pxlrbt\FilamentEnvironmentIndicator\FilamentEnvironmentIndicator;
+use Statview\Satellite\Statview;
+use Statview\Satellite\Widgets\Widget;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,6 +29,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Statview::registerWidgets(function () {
+            return [
+                Widget::make('total_contact_requests')
+                    ->title('Total contact requests')
+                    ->value(ContactRequest::count())
+                    ->description('The amount of contact requests send'),
+
+            ];
+        });
         Filament::serving(function () {
 
             Filament::registerTheme(
