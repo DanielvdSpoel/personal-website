@@ -30,11 +30,17 @@ class SelectCorrectLanguageMiddleware
             $tld = array_pop($parts);
 
             $lang = config('domains.languages.' . $tld);
+            if (!$lang) {
+                $lang = config('app.fallback_locale');
+            }
+
             $newUrl = Url::fromString($request->url())
                 ->withHost(config('domains.english_domain'))
-                ->withPath(route($request->route()->getName(), ['language' => $lang]));
-            dump($lang);
-            dd($newUrl);
+                ->withPath(route($request->route()->getName(), ['language' => $lang], false));
+            return redirect()->to($newUrl);
+//            dump(route($request->route()->getName(), ['language' => $lang], false), );
+//            dump($lang);
+//            dd($newUrl);
         }
 
 
