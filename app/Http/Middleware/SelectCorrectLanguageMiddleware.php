@@ -18,12 +18,19 @@ class SelectCorrectLanguageMiddleware
     public function handle(Request $request, Closure $next)
     {
         $url = Url::fromString($request->url());
-        dd($url->getHost());
 
-        $redirect_domains = explode(',', config('app.redirect_domains'));
-        if (in_array($request->getHost(), $redirect_domains)) {
-            return redirect(route('home', ['language' => 'nl']));
+        if ($url->getHost() !== config('domains.english_domain')) {
+            $language = config('domains.languages.' . $url->getHost());
+            dd($language);
+
+            $redirect_domains = explode(',', config('app.redirect_domains'));
+            if (in_array($request->getHost(), $redirect_domains)) {
+                return redirect(route('home', ['language' => 'nl']));
+            }
         }
+
+
+
         app()->setLocale($request->language);
         return $next($request);
     }
