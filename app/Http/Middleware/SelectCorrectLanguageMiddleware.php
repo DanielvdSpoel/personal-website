@@ -31,6 +31,7 @@ class SelectCorrectLanguageMiddleware
                 ->withHost(config('domains.english_domain'));
 
             if ($request->route()->getName() === 'redirect') {
+                dd("Redirect");
                 $newUrl->withPath(route('home', ['language' => $lang], false));
             } else {
                 $newUrl->withPath(route($request->route()->getName(), ['language' => $lang], false));
