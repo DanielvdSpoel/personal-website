@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Spatie\Url\Url;
 
 class SelectCorrectLanguageMiddleware
 {
@@ -16,6 +17,9 @@ class SelectCorrectLanguageMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
+        $url = Url::fromString($request->url());
+        dd($url->getHost());
+
         $redirect_domains = explode(',', config('app.redirect_domains'));
         if (in_array($request->getHost(), $redirect_domains)) {
             return redirect(route('home', ['language' => 'nl']));
