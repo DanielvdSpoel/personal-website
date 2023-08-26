@@ -32,6 +32,8 @@ class SelectCorrectLanguageMiddleware
 
             if ($request->route()->getName() === 'redirect') {
                 $newUrl->withPath(route('home', ['language' => $lang], false));
+                dump(route('home', ['language' => $lang], false));
+                dd((string)$newUrl);
             } else {
                 $newUrl->withPath(route($request->route()->getName(), ['language' => $lang], false));
             }
