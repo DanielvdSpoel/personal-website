@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::redirect('/', '/en');
+Route::redirect('/', '/en')->name('redirect');
 
 Route::prefix('/{language}')->group(function () {
     Route::get('/', HomeController::class)->name('home');

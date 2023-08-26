@@ -26,6 +26,7 @@ class SelectCorrectLanguageMiddleware
             if (!$lang) {
                 $lang = config('app.fallback_locale');
             }
+            dump($request->route()->getName());
             dump(route($request->route()->getName(), ['language' => $lang], false));
 
             $newUrl = Url::fromString($request->url())
