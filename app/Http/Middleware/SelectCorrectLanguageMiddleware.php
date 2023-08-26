@@ -18,6 +18,7 @@ class SelectCorrectLanguageMiddleware
     public function handle(Request $request, Closure $next)
     {
         if ($request->getHost() !== config('domains.english_domain')) {
+
             $parts = explode('.', $request->getHost());
             $tld = array_pop($parts);
 
@@ -26,12 +27,15 @@ class SelectCorrectLanguageMiddleware
             if (!$lang) {
                 $lang = config('app.fallback_locale');
             }
+
+            dump(url()->full());
             dump($request->route()->getName());
             dump(route($request->route()->getName(), ['language' => $lang], false));
 
             $newUrl = Url::fromString($request->url())
                 ->withHost(config('domains.english_domain'))
                 ->withPath(route($request->route()->getName(), ['language' => $lang], false));
+
             dd($newUrl);
             return redirect()->to($newUrl);
         }
