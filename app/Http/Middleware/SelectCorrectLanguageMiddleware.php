@@ -31,13 +31,11 @@ class SelectCorrectLanguageMiddleware
                 ->withHost(config('domains.english_domain'));
 
             if ($request->route()->getName() === 'redirect') {
-                dd(route('home', ['language' => $lang], false));
                 $newUrl->withPath(route('home', ['language' => $lang], false));
             } else {
                 $newUrl->withPath(route($request->route()->getName(), ['language' => $lang], false));
             }
 
-            dd($newUrl);
             return redirect()->to($newUrl);
         }
 
