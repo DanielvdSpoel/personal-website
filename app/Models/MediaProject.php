@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 
 class MediaProject extends Pivot
 {
+    public $timestamps = false;
     public function media(): BelongsTo
     {
         return $this->belongsTo(Media::class);
