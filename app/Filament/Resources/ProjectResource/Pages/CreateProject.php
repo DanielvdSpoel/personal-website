@@ -16,7 +16,7 @@ class CreateProject extends CreateRecord
 
     protected static string $resource = ProjectResource::class;
 
-    protected function getActions(): array
+    protected function getHeaderActions(): array
     {
         return [
             Actions\LocaleSwitcher::make(),

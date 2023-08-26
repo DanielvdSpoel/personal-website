@@ -13,7 +13,7 @@ class CreateEmployer extends CreateRecord
 
     protected static string $resource = EmployerResource::class;
 
-    protected function getActions(): array
+    protected function getHeaderActions(): array
     {
         return [
             Actions\LocaleSwitcher::make(),

@@ -6,9 +6,9 @@ use App\Filament\Resources\ContactRequestResource\Pages;
 use App\Filament\Resources\ContactRequestResource\RelationManagers;
 use App\Models\ContactRequest;
 use Filament\Forms;
-use Filament\Resources\Form;
+use Filament\Forms\Form;
 use Filament\Resources\Resource;
-use Filament\Resources\Table;
+use Filament\Tables\Table;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
@@ -18,7 +18,7 @@ class ContactRequestResource extends Resource
 {
     protected static ?string $model = ContactRequest::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-chat-alt-2';
+    protected static ?string $navigationIcon = 'heroicon-o-chat-bubble-left-right';
 
     public static function form(Form $form): Form
     {

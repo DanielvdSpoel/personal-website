@@ -11,7 +11,7 @@ class EditSkill extends EditRecord
     use EditRecord\Concerns\Translatable;
     protected static string $resource = SkillResource::class;
 
-    protected function getActions(): array
+    protected function getHeaderActions(): array
     {
         return [
             Actions\DeleteAction::make(),

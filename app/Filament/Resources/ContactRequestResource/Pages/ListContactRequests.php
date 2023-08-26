@@ -10,7 +10,7 @@ class ListContactRequests extends ListRecords
 {
     protected static string $resource = ContactRequestResource::class;
 
-    protected function getActions(): array
+    protected function getHeaderActions(): array
     {
         return [
             Actions\CreateAction::make(),

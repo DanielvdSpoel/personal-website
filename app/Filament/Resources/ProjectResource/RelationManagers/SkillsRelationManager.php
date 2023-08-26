@@ -4,9 +4,9 @@ namespace App\Filament\Resources\ProjectResource\RelationManagers;
 
 use App\Models\Skill;
 use Filament\Forms;
-use Filament\Resources\Form;
+use Filament\Forms\Form;
 use Filament\Resources\RelationManagers\RelationManager;
-use Filament\Resources\Table;
+use Filament\Tables\Table;
 use Filament\Tables;
 
 class SkillsRelationManager extends RelationManager
@@ -16,7 +16,7 @@ class SkillsRelationManager extends RelationManager
 
     protected static ?string $recordTitleAttribute = 'name->en';
 
-    public static function form(Form $form): Form
+    public function form(Form $form): Form
     {
         return $form
             ->schema([
@@ -26,7 +26,7 @@ class SkillsRelationManager extends RelationManager
             ]);
     }
 
-    public static function table(Table $table): Table
+    public function table(Table $table): Table
     {
         return $table
             ->columns([

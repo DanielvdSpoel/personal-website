@@ -11,7 +11,7 @@ class CreateSkill extends CreateRecord
     use CreateRecord\Concerns\Translatable;
     protected static string $resource = SkillResource::class;
 
-    protected function getActions(): array
+    protected function getHeaderActions(): array
     {
         return [
             Actions\LocaleSwitcher::make(),
