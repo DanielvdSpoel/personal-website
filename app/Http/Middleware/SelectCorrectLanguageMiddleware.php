@@ -22,10 +22,7 @@ class SelectCorrectLanguageMiddleware
             $parts = explode('.', $request->getHost());
             $tld = array_pop($parts);
 
-            $lang = config('domains.languages.' . $tld);
-            if (!$lang) {
-                $lang = config('app.fallback_locale');
-            }
+            $lang = config('domains.languages.' . $tld, config('app.fallback_locale'));
 
             $newUrl = Url::fromString($request->url())
                 ->withHost(config('domains.english_domain'));
