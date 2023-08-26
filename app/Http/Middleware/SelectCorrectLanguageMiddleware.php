@@ -17,17 +17,33 @@ class SelectCorrectLanguageMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        $url = Url::fromString($request->url());
+        //Check if request is to danielvdspoel.com
 
-        if ($url->getHost() !== config('domains.english_domain')) {
-            $language = config('domains.languages.' . $url->getHost());
-            dd($language);
+        //if no, check what tld is used
 
-            $redirect_domains = explode(',', config('app.redirect_domains'));
-            if (in_array($request->getHost(), $redirect_domains)) {
-                return redirect(route('home', ['language' => 'nl']));
-            }
+        //check which languages is used for that tld
+
+        //redirect to danielvdspoel.com with the correct language
+
+        if ($request->getHost() !== config('domains.english_domain')) {
+            $tld = explode('.', $request->getHost());
+            dd($tld);
         }
+
+
+
+//        $url = Url::fromString($request->url());
+//
+//        if ($url->getHost() !== config('domains.english_domain')) {
+//            $tld = explode('.', $url->getHost());
+//            $language = config('domains.languages.' . $url->getHost());
+//            dd($language);
+//
+//            $redirect_domains = explode(',', config('app.redirect_domains'));
+//            if (in_array($request->getHost(), $redirect_domains)) {
+//                return redirect(route('home', ['language' => 'nl']));
+//            }
+//        }
 
 
 
