@@ -31,9 +31,10 @@ class SelectCorrectLanguageMiddleware
 
             $lang = config('domains.languages.' . $tld);
             $newUrl = Url::fromString($request->url())
-                ->withHost(config('domains.english_domain'));
+                ->withHost(config('domains.english_domain'))
+                ->withPath(route($request->route()->getName(), ['language' => $lang]));
             dump($lang);
-            dump($newUrl);
+            dd($newUrl);
         }
 
 
