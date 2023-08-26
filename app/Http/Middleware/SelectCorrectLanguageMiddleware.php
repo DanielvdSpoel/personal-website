@@ -26,8 +26,14 @@ class SelectCorrectLanguageMiddleware
         //redirect to danielvdspoel.com with the correct language
 
         if ($request->getHost() !== config('domains.english_domain')) {
-            $tld = explode('.', $request->getHost());
-            dd($tld);
+            $parts = explode('.', $request->getHost());
+            $tld = array_pop($parts);
+
+            $lang = config('domains.languages.' . $tld);
+            $newUrl = Url::fromString($request->url())
+                ->withHost(config('domains.english_domain'));
+            dump($lang);
+            dump($newUrl);
         }
 
 
