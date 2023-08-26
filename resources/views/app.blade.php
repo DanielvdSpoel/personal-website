@@ -9,8 +9,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
-    <link href="{{ mix('/css/app.css') }}" rel="stylesheet" />
-    <script src="{{ mix('/js/app.js') }}" defer></script>
+    @vite('resources/css/app.css')
+    @vite('resources/js/app.js')
 
     <script src="https://kit.fontawesome.com/ddae002269.js" crossorigin="anonymous"></script>
     <script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js"
