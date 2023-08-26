@@ -11,7 +11,7 @@ class ListSkills extends ListRecords
     use ListRecords\Concerns\Translatable;
     protected static string $resource = SkillResource::class;
 
-    protected function getActions(): array
+    protected function getHeaderActions(): array
     {
         return [
             Actions\CreateAction::make(),

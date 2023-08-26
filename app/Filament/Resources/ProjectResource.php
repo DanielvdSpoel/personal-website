@@ -15,9 +15,9 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Concerns\Translatable;
-use Filament\Resources\Form;
+use Filament\Forms\Form;
 use Filament\Resources\Resource;
-use Filament\Resources\Table;
+use Filament\Tables\Table;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Str;
@@ -28,7 +28,7 @@ class ProjectResource extends Resource
 
     protected static ?string $model = Project::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function getTranslatableLocales(): array
     {
@@ -40,7 +40,7 @@ class ProjectResource extends Resource
         return $form
             ->schema([
                 TextInput::make('name')
-                    ->afterStateUpdated(function (Closure $get, Closure $set, ?string $state) {
+                    ->afterStateUpdated(function (\Filament\Forms\Get $get, \Filament\Forms\Set $set, ?string $state) {
                         if (!$get('is_slug_changed_manually') && filled($state)) {
                             $set('slug', Str::slug($state));
                         }
@@ -49,7 +49,7 @@ class ProjectResource extends Resource
                     ->reactive()
                     ->required(),
                 TextInput::make('slug')
-                    ->afterStateUpdated(function (Closure $set) {
+                    ->afterStateUpdated(function (\Filament\Forms\Set $set) {
                         $set('is_slug_changed_manually', true);
                     })
                     ->maxLength(255)
