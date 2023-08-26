@@ -38,15 +38,5 @@ class AppServiceProvider extends ServiceProvider
 
             ];
         });
-//        Filament::serving(function () {
-//
-//            Filament::registerTheme(
-//                mix('css/filament.css'),
-//            );
-//        });
-//
-//        FilamentEnvironmentIndicator::configureUsing(function (FilamentEnvironmentIndicator $indicator) {
-//            $indicator->visible = fn () => !App::environment('production');
-//        }, isImportant: true);
     }
 }

@@ -57,13 +57,20 @@ class ProjectResource extends Resource
                 Hidden::make('is_slug_changed_manually')
                     ->default(false)
                     ->dehydrated(false),
+                DatePicker::make('started_at'),
+                DatePicker::make('completed_at'),
+
                 TextInput::make('client')
                     ->maxLength(255),
-                DatePicker::make('completed_at'),
+                Textarea::make('description')
+                    ->maxLength(255),
                 RichEditor::make('content')
                     ->columnSpan(2)
                     ->required(),
                 Repeater::make('media')
+                    ->relationship('mediaProjects')
+                    ->columnSpanFull()
+                    ->columns()
                     ->schema([
                         CuratorPicker::make('media_id')->required(),
                         Select::make('theme_availability')
@@ -77,8 +84,7 @@ class ProjectResource extends Resource
                             ->default('never')
                             ->required(),
                     ]),
-                Textarea::make('description')
-                    ->maxLength(255),
+
 
             ]);
     }

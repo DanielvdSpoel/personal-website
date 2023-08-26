@@ -7,6 +7,7 @@ use Awcodes\Curator\Models\Media;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Project extends Model
 {
@@ -16,6 +17,7 @@ class Project extends Model
         'name',
         'slug',
         'client',
+        'started_at',
         'completed_at',
         'description',
         'content'
@@ -27,6 +29,11 @@ class Project extends Model
         'description',
         'content',
     ];
+
+    public function mediaProjects(): HasMany
+    {
+        return $this->hasMany(MediaProject::class);
+    }
 
     public function media(): BelongsToMany
     {

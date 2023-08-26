@@ -23,14 +23,14 @@ class CreateProject extends CreateRecord
         ];
     }
 
-    protected function handleRecordCreation(array $data): Project
-    {
-        $project = Project::create($data);
-
-        foreach ($data['media'] as $mediaSettings) {
-            $project->media()->attach($mediaSettings['media_id'], ['theme_availability' => $mediaSettings['theme_availability']]);
-        }
-
-        return $project;
-    }
+//    protected function handleRecordCreation(array $data): Project
+//    {
+//        $project = Project::create($data);
+//
+//        foreach ($data['media'] as $mediaSettings) {
+//            $project->media()->attach($mediaSettings['media_id'], ['theme_availability' => $mediaSettings['theme_availability']]);
+//        }
+//
+//        return $project;
+//    }
 }
