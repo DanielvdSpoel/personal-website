@@ -50,6 +50,7 @@
                                 </div>
                                 <div class="flex justify-end md:flex-1 gap-4">
                                     <DarkModeButton/>
+                                    <LanguageButton/>
 
                                 </div>
 
@@ -67,10 +68,11 @@ import DarkModeButton from "./DarkModeButton.vue";
 import MobileNavigation from "./MobileNavigation.vue";
 import {Link} from '@inertiajs/vue3'
 import NavLink from "./NavLink.vue";
+import LanguageButton from "@/components/Layout/LanguageButton.vue";
 
 export default {
     name: "NavigationHeader",
-    components: {NavLink, MobileNavigation, DarkModeButton, Link}
+    components: {LanguageButton, NavLink, MobileNavigation, DarkModeButton, Link}
 }
 </script>
 
