@@ -52,7 +52,9 @@ class SkillResource extends Resource
     {
         return $table
             ->columns([
-                CuratorColumn::make('media')->label('Logo'),
+                CuratorColumn::make('media')
+                    ->height('50px')
+                    ->label('Logo'),
                 Tables\Columns\TextColumn::make('name')
                     ->searchable()->sortable(),
                 Tables\Columns\TextColumn::make('description')
@@ -61,7 +63,7 @@ class SkillResource extends Resource
                     ->tooltip(function (TextColumn $column): ?string {
                         $state = $column->getState();
 
-                        if (strlen($state) <= $column->getLimit()) {
+                        if (strlen($state) <= $column->getCharacterLimit()) {
                             return null;
                         }
 
