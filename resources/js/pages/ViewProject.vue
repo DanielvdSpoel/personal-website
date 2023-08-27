@@ -33,15 +33,6 @@
                         </header>
                         <div class="mt-8 prose dark:prose-invert" v-html="project.content">
                         </div>
-                        <div v-if="project.skills.length > 0">
-                            <h3 class="mt-6 mb-4 text-xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">
-                                {{ $t('pages.project.skills') }}
-                                <ul role="list" class="my-8 grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
-                                    <SkillRow v-for="skill in project.skills" :key="skill.id" :skill="skill"/>
-                                </ul>
-                            </h3>
-                        </div>
-
 
                         <div v-if="project.media.length > 0">
                             <h3 class="mt-6 mb-4 text-xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">
@@ -55,6 +46,15 @@
                                     <pagination/>
                                 </template>
                             </carousel>
+                        </div>
+
+                        <div v-if="project.skills.length > 0">
+                            <h3 class="mt-6 mb-4 text-xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">
+                                {{ $t('pages.project.skills') }}
+                                <ul role="list" class="my-8 grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+                                    <SkillRow v-for="skill in project.skills" :key="skill.id" :skill="skill"/>
+                                </ul>
+                            </h3>
                         </div>
                     </article>
                 </div>
