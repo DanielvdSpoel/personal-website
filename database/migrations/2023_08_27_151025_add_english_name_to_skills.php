@@ -15,7 +15,7 @@ return new class extends Migration
         if (config('database.default') === 'pgsql') {
             DB::statement("ALTER TABLE skills ADD english_name VARCHAR(255) GENERATED ALWAYS AS (COALESCE(name->>'en', '')) STORED");
         } else {
-            Schema::table('pet_categories', function (Blueprint $table) {
+            Schema::table('skills', function (Blueprint $table) {
                 $table->string('english_name')
                     ->virtualAs("COALESCE(name->>'en', '')");
             });
