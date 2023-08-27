@@ -12,12 +12,12 @@
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
 
-    <meta property="og:title" content=Daniël van der Spoel - Full stack web developer>
-    <meta property="og:site_name" content=DanielvdSpoel>
-    <meta property="og:url" content=https://danielvdspoel.com/>
+    <meta property="og:title" content="Daniël van der Spoel - Full stack web developer">
+    <meta property="og:site_name" content="DanielvdSpoel">
+    <meta property="og:url" content="https://danielvdspoel.com/">
     <meta property="og:description" content="{{ __('pages.home.description') }}">
-    <meta property="og:type" content=website>
-    <meta property="og:image" content=https://danielvdspoel.com/img/me_fancy.jpg>
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://danielvdspoel.com/img/me_fancy.jpg">
 
     <script src="https://kit.fontawesome.com/ddae002269.js" crossorigin="anonymous"></script>
     <script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js"

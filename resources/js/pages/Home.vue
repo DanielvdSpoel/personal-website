@@ -36,7 +36,7 @@
                     class="relative aspect-[16/9] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
                     <img :alt="medium.alt" sizes="(min-width: 640px) 18rem, 11rem"
                          :src="medium.url"
-                         class="absolute inset-0 h-full w-full object-cover" loading="lazy"
+                         class="absolute inset-0 h-full w-full" loading="lazy"
                          style="color:transparent">
                 </div>
             </div>
