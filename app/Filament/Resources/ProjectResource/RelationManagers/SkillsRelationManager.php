@@ -14,7 +14,7 @@ class SkillsRelationManager extends RelationManager
 
     protected static string $relationship = 'skills';
 
-    protected static ?string $recordTitleAttribute = 'name->en';
+    protected static ?string $recordTitleAttribute = 'en_name';
 
     public function form(Form $form): Form
     {

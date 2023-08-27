@@ -13,12 +13,9 @@ return new class extends Migration
     public function up(): void
     {
         if (config('database.default') === 'pgsql') {
-            DB::statement("ALTER TABLE skills ADD english_name VARCHAR(255) GENERATED ALWAYS AS (COALESCE(name->>'en', '')) STORED");
+            DB::statement("ALTER TABLE skills ADD en_name VARCHAR(255) GENERATED ALWAYS AS (COALESCE(name->>'en', '')) STORED");
         } else {
-            Schema::table('skills', function (Blueprint $table) {
-                $table->string('english_name')
-                    ->virtualAs("COALESCE(name->>'en', '')");
-            });
+            DB::statement("ALTER TABLE skills ADD COLUMN en_name VARCHAR(255) GENERATED ALWAYS AS (JSON_UNQUOTE(JSON_EXTRACT(name, '$.en'))) STORED");
         }
 
     }
