@@ -46,8 +46,10 @@ class EmployerResource extends Resource
                 Textarea::make('description')
                     ->maxLength(255),
                 DatePicker::make('start_date')
+                    ->native(false)
                     ->required(),
                 DatePicker::make('end_date')
+                    ->native(false)
                     ->hint('Leave blank if you are still working here.'),
             ]);
     }

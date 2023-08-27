@@ -57,8 +57,10 @@ class ProjectResource extends Resource
                 Hidden::make('is_slug_changed_manually')
                     ->default(false)
                     ->dehydrated(false),
-                DatePicker::make('started_at'),
-                DatePicker::make('completed_at'),
+                DatePicker::make('started_at')
+                    ->native(false),
+                DatePicker::make('completed_at')
+                    ->native(false),
 
                 TextInput::make('client')
                     ->maxLength(255),
