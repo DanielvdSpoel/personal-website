@@ -8,4 +8,6 @@ return [
     'read_more' => 'Lees meer',
     'not_completed_yet' => 'Nog niet afgerond',
     'present' => 'Heden',
+    'ongoing_project' => 'Lopend project sinds :date',
+    'finished_project' => 'Project afgerond op :date',
 ];

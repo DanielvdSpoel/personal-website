@@ -15,14 +15,13 @@
                 </div>
             </Link>
         </h2>
-        <time class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5"
-            :datetime="project.completed_at">
+        <div v-if="timeString" class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
             <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
                 <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500">
                 </span>
             </span>
-            {{ completionDate }}
-        </time>
+            {{ timeString }}
+        </div>
         <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
             {{ project.description }}...
         </p>
@@ -54,9 +53,26 @@ export default {
     components: {
         Link
     },
+    methods: {
+        getTimeString(date) {
+            console.log(this.$page.props.language)
+            const language = this.$page.props.language === 'en' ? 'en-US' : 'nl-NL';
+            const options = {month: 'long', year: 'numeric'};
+            const dateObject = new Date(date);
+            return dateObject.toLocaleString(language, options);
+        }
+    },
     computed: {
-        completionDate() {
-            return this.project.completed_at == null ? this.$t('labels.not_completed_yet') : DateTime.fromISO(this.project.completed_at).toLocaleString({month: 'long', year: 'numeric'});
+        timeString() {
+            if (this.project.completed_at === null && this.project.started_at !== null) {
+                return this.$t('labels.ongoing_project', {date: this.getTimeString(this.project.started_at)});
+            }
+            if (this.project.completed_at && this.project.started_at) {
+                return this.$t('labels.finished_project', {
+                    date: this.getTimeString(this.project.completed_at)
+                });
+            }
+            return null;
         }
     }
 }
