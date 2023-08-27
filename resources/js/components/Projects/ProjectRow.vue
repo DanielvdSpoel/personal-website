@@ -49,6 +49,15 @@ export default {
     components: {
         Link
     },
+    methods: {
+        getTimeString(date) {
+            console.log(this.$page.props.language)
+            const language = this.$page.props.language === 'en' ? 'en-US' : 'nl-NL';
+            const options = {month: 'long', year: 'numeric'};
+            const dateObject = new Date(date);
+            return dateObject.toLocaleString(language, options);
+        }
+    },
     computed: {
         timeString() {
             if (this.project.completed_at === null && this.project.started_at !== null) {
