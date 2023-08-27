@@ -37,18 +37,6 @@ class SkillsRelationManager extends RelationManager
             ])
             ->headerActions([
                 Tables\Actions\AttachAction::make()
-                    ->recordSelect(function (RelationManager $livewire) {
-                        return Forms\Components\Select::make('recordId')
-                            ->label(__('filament-support::actions/attach.single.modal.fields.record_id.label'))
-                            ->getSearchResultsUsing(fn (string $search) => Skill::where('name->en', 'like', "%{$search}%")
-                                ->whereNotIn('id', $livewire->ownerRecord->skills->pluck('id'))
-                                ->pluck('name', 'id'))
-                            ->getOptionLabelUsing(fn ($value): ?string => Skill::find($value)?->name)
-                            ->preload()
-                            ->required()
-                            ->searchable()
-                            ->disableLabel();
-                    })
             ])
             ->actions([
                 Tables\Actions\DetachAction::make(),

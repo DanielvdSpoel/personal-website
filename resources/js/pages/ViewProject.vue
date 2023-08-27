@@ -23,13 +23,13 @@
                                 </p>
                             </div>
 
-                            <time :datetime="project.completed_at"
+                            <div v-if="timeString"
                                   class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">
                                 <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
                                 <span class="ml-3">
-                                    {{ completionDate }}
+                                    {{ timeString }}
                                 </span>
-                            </time>
+                            </div>
                         </header>
                         <div class="mt-8 prose dark:prose-invert" v-html="project.content">
                         </div>
@@ -84,11 +84,17 @@ export default {
         project: Object,
     },
     computed: {
-        completionDate() {
-            return this.project.completed_at == null ? this.$t('labels.not_completed_yet') : DateTime.fromISO(this.project.completed_at).toLocaleString({month: 'long', year: 'numeric'});
-        },
-
-
+        timeString() {
+            if (this.project.completed_at === null && this.project.started_at !== null) {
+                return this.$t('labels.ongoing_project', {date: this.getTimeString(this.project.started_at)});
+            }
+            if (this.project.completed_at && this.project.started_at) {
+                return this.$t('labels.finished_project', {
+                    date: this.getTimeString(this.project.completed_at)
+                });
+            }
+            return null;
+        }
     }
 }
 </script>
