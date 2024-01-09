@@ -19,25 +19,10 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://danielvdspoel.com/img/me_fancy.jpg">
 
-    <script src="https://kit.fontawesome.com/ddae002269.js" crossorigin="anonymous"></script>
-    <script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js"
-            id="pirschextendedjs"
-            data-code="rM2Hi82rMJvjxyeWQHa82n7xQBIXo3as"></script>
-    <!-- Matomo -->
-    <script>
-        var _paq = window._paq = window._paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            var u="//stats.danielvdspoel.com/";
-            _paq.push(['setTrackerUrl', u+'matomo.php']);
-            _paq.push(['setSiteId', '2']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-        })();
-    </script>
-    <!-- End Matomo Code -->
+    <script src="https://kit.fontawesome.com/846b61101a.js" crossorigin="anonymous"></script>
+{{--    <script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js"--}}
+{{--            id="pirschextendedjs"--}}
+{{--            data-code="rM2Hi82rMJvjxyeWQHa82n7xQBIXo3as"></script>--}}
     @inertiaHead
 </head>
 <body class="flex h-full flex-col bg-zinc-50 dark:bg-black">
