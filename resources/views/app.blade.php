@@ -20,9 +20,7 @@
     <meta property="og:image" content="https://danielvdspoel.com/img/me_fancy.jpg">
 
     <script src="https://kit.fontawesome.com/846b61101a.js" crossorigin="anonymous"></script>
-{{--    <script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js"--}}
-{{--            id="pirschextendedjs"--}}
-{{--            data-code="rM2Hi82rMJvjxyeWQHa82n7xQBIXo3as"></script>--}}
+    <script defer data-domain="danielvdspoel.com" src="http://stats.danielvdspoel.com/js/script.js"></script>
     @inertiaHead
 </head>
 <body class="flex h-full flex-col bg-zinc-50 dark:bg-black">
