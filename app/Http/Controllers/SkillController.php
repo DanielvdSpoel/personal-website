@@ -15,6 +15,7 @@ class SkillController extends Controller
      */
     public function __invoke(Request $request)
     {
+        dd($_SERVER);
         return inertia('Skills', [
             'skills' => Skill::with('media')->get(),
         ]);
